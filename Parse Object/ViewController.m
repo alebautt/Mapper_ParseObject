@@ -56,6 +56,8 @@
 - (void) getWeather{
     mjsonWeather = [WebServices getWeather];
     print(NSLog(@"mjsonWeather = %@", mjsonWeather))
+    WeatherResponse *weatherResponse = [Parser parseWeatherResponse];
+    print(NSLog(@"weatherResponse = %@", weatherResponse.base))
     
 }
 @end

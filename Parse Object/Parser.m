@@ -8,6 +8,7 @@
 
 #import "Parser.h"
 
+
 @implementation Parser
 //-------------------------------------------------------------------
 + (ObjectResponse *)parseRegisterObject {
@@ -29,4 +30,17 @@
     }
     return nil;
 }
+
+//-------------------------------------------------------------------
++ (WeatherResponse *)parseWeatherResponse {
+    //check for valid value
+    if(mjsonWeather != nil) {
+        // Using ObjectMapper Directly
+        WeatherResponse *customizedObject = [[ObjectMapper sharedInstance] objectFromSource:mjsonWeather
+                                                                         toInstanceOfClass:[WeatherResponse class]];
+        return customizedObject;
+    }
+    return nil;
+}
+
 @end
