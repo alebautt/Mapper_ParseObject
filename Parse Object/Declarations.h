@@ -18,8 +18,11 @@
 //Operations
 #define nTimeStamp          [NSString stringWithFormat:@"%lu",(long)[[NSDate date] timeIntervalSince1970] * 1]
 
+
+extern NSDictionary *mjsonWeather;
 extern NSDictionary *mjsonRegister;
 extern NSDictionary *mjsonZones;
 @interface Declarations : NSObject
+
 
 @end
