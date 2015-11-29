@@ -11,6 +11,7 @@
 #import "ObjectMapper.h"
 #import "ObjectResponse.h"
 #import "WeatherResponse.h"
+#import "WeatherObject.h"
 
 
 //Debug

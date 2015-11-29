@@ -1,5 +1,5 @@
 //
-//  WeatherResponse.h
+//  WeatherObject.h
 //  Parse Object
 //
 //  Created by Alejandra B on 29/11/15.
@@ -8,13 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WeatherResponse : NSObject
-@property (nonatomic,strong) NSString *base;
-@property (nonatomic,strong) NSString *dt;
+@interface WeatherObject : NSObject
 @property (nonatomic,strong) NSString *ID;
-
-@property (nonatomic,strong) NSMutableArray *weather;
-
-
+@property (nonatomic,strong) NSString *main;
+@property (nonatomic,strong) NSString *weather_description;
+@property (nonatomic,strong) NSString *icon;
 
 @end

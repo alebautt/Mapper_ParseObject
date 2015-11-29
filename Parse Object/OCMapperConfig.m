@@ -10,6 +10,7 @@
 #import "OCMapper.h"
 #import "Declarations.h"
 
+
 @implementation OCMapperConfig
 + (void)configure {
     InCodeMappingProvider *inCodeMappingProvider = [[InCodeMappingProvider alloc] init];
@@ -18,8 +19,14 @@
     [[ObjectMapper sharedInstance] setMappingProvider:inCodeMappingProvider];
     [[ObjectMapper sharedInstance] setLoggingProvider:commonLoggingProvider];
     
-    /******************* Alerts **********************/
+    /******************* Maping **********************/
     [inCodeMappingProvider mapFromDictionaryKey:@"zones" toPropertyKey:@"zones"
                                  withObjectType:[ZonesObject class] forClass:[ObjectResponse class]];
+    
+    [inCodeMappingProvider mapFromDictionaryKey:@"weather" toPropertyKey:@"weather"
+                                 withObjectType:[WeatherObject class] forClass:[WeatherResponse class]];
+    
+    [inCodeMappingProvider mapFromDictionaryKey:@"description" toPropertyKey:@"weather_description"
+                                 withObjectType:[NSString class] forClass:[WeatherObject class]];
 }
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B0E039D91C0B78680063326A /* WeatherResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E039D81C0B78680063326A /* WeatherResponse.m */; };
+		B0E039DC1C0B7C9B0063326A /* WeatherObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E039DB1C0B7C9B0063326A /* WeatherObject.m */; };
 		D14AC0421C0B459E0079A34A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D14AC0411C0B459E0079A34A /* main.m */; };
 		D14AC0451C0B459E0079A34A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D14AC0441C0B459E0079A34A /* AppDelegate.m */; };
 		D14AC0481C0B459E0079A34A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14AC0471C0B459E0079A34A /* ViewController.m */; };
@@ -46,6 +47,8 @@
 /* Begin PBXFileReference section */
 		B0E039D71C0B785C0063326A /* WeatherResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherResponse.h; sourceTree = "<group>"; };
 		B0E039D81C0B78680063326A /* WeatherResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherResponse.m; sourceTree = "<group>"; };
+		B0E039DA1C0B7C9B0063326A /* WeatherObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherObject.h; sourceTree = "<group>"; };
+		B0E039DB1C0B7C9B0063326A /* WeatherObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherObject.m; sourceTree = "<group>"; };
 		D14AC03D1C0B459E0079A34A /* Parse Object.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parse Object.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14AC0411C0B459E0079A34A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D14AC0431C0B459E0079A34A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 			children = (
 				B0E039D81C0B78680063326A /* WeatherResponse.m */,
 				B0E039D71C0B785C0063326A /* WeatherResponse.h */,
+				B0E039DA1C0B7C9B0063326A /* WeatherObject.h */,
+				B0E039DB1C0B7C9B0063326A /* WeatherObject.m */,
 			);
 			name = Weather;
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				D14AC0921C0B478A0079A34A /* SBJsonParser.m in Sources */,
 				D14AC09B1C0B478A0079A34A /* SBJsonUTF8Stream.m in Sources */,
 				D14AC0931C0B478A0079A34A /* SBJsonStreamParser.m in Sources */,
+				B0E039DC1C0B7C9B0063326A /* WeatherObject.m in Sources */,
 				D14AC0BA1C0B59B70079A34A /* ZonesObject.m in Sources */,
 				D14AC09A1C0B478A0079A34A /* SBJsonTokeniser.m in Sources */,
 				D14AC0AF1C0B488F0079A34A /* Parser.m in Sources */,
